@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "captiOnline 連絡チャット通知",
+  "version": "1.0.3",
+  "description": "captiOnlineの連絡チャットに新着メッセージが届いたときに通知音とOS通知を出す",
+  "permissions": [
+    "notifications",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://co3.captionline.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://co3.captionline.org/capti/*/captionist.html"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sounds/*.wav"],
+      "matches": ["https://co3.captionline.org/*"]
+    }
+  ]
+}

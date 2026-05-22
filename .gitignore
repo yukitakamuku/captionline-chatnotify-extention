@@ -1,0 +1,11 @@
+# Local agent/project context. May contain private URLs or passwords.
+AGENTS.md
+
+# Generated Chrome Web Store package.
+*.zip
+
+# Local/store listing assets that are not required by the extension source.
+app_icon_*.png
+screenshot*.png
+
+.DS_Store
