@@ -8,10 +8,10 @@ captiOnline の連絡チャットに新着メッセージが届いたとき、�
 
 ## Privacy Policy
 
-Chrome Web Store のプライバシーポリシー欄には、GitHub Pages で公開した次の形式の URL を設定します。
+Chrome Web Store のプライバシーポリシー欄には、GitHub Pages で公開した次の URL を設定します。
 
 ```text
-https://<GitHubユーザー名>.github.io/<リポジトリ名>/privacy.html
+https://yukitakamuku.github.io/captionline-chatnotify-extention/privacy.html
 ```
 
 `privacy.html` はこのリポジトリのルートにあります。
